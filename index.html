@@ -9,37 +9,35 @@
 </head>
 
 <body class="bg-warning">
-
-
     <div class="container">
         <h1>Online Shop</h1>
 
         <form id="frm-new-product" class="col-4 max-auto">
             <div class="mb-3">
                 <label for="name" class="form-label">Product Name</label>
-                <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">
+                <input type="text" name="name" class="form-control" id="name" required>
             </div>
             <div class="mb-3">
                 <label for="price" class="form-label">Price</label>
-                <input type="number" name="price" class="form-control" id="price">
+                <input type="number" name="price" class="form-control" id="price" required>
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
-                <input type="text" name="description" class="form-control" id="description">
+                <input type="text" name="description" class="form-control" id="description" required>
             </div>
             <button type="submit" class="btn btn-primary btn-sm">Submit</button>
         </form>
-        <div class="row">
 
+        <div class="row mt-3">
             <div class="col-8 mx-1">
                 <div class="row" id="product-container"></div>
             </div>
-            <div class="col-3 border mx-1" id="product-view"></div>
-
+            <div class="col-3 border mx-1" id="product-view">
+                <p class="text-muted">Select a product to view/edit here</p>
+            </div>
         </div>
     </div>
 
     <script src="js/index.js"></script>
 </body>
-
 </html>
